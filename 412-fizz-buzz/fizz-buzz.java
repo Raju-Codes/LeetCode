@@ -6,16 +6,16 @@ class Solution {
             String con = "";
             boolean divisibleBy3 = i % 3 == 0;
             boolean divisibleBy5 = i % 5 == 0;
+
             if(divisibleBy3 && divisibleBy5) {
-                con = "FizzBuzz";
+                answer.add("FizzBuzz");
             } else if (divisibleBy3) {
-                con = "Fizz";
+                answer.add("Fizz");
             } else if (divisibleBy5) {
-                con ="Buzz";
+                answer.add("Buzz");
             } else {
-                con +=i;
+                answer.add(String.valueOf(i));
             }
-            answer.add(con);
         }
         return answer;
     }
